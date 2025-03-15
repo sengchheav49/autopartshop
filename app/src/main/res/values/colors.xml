@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="colorPrimary">#1E88E5</color>
+    <color name="colorPrimaryDark">#1565C0</color>
+    <color name="colorPrimaryLight">#64B5F6</color>
+    <color name="colorAccent">#FF5722</color>
+
+    <!-- Background Colors -->
+    <color name="colorBackground">#F5F5F5</color>
+    <color name="colorBackgroundDark">#E0E0E0</color>
+    <color name="colorCard">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#757575</color>
+    <color name="colorTextLight">#EEEEEE</color>
+
+    <!-- Other Colors -->
+    <color name="colorDivider">#EEEEEE</color>
+    <color name="colorSuccess">#4CAF50</color>
+    <color name="colorError">#F44336</color>
+    <color name="colorWarning">#FF9800</color>
+    <color name="colorInfo">#2196F3</color>
+
+    <!-- Overlay Colors -->
+    <color name="colorOverlay">#80000000</color>
+    <color name="colorRipple">#33000000</color>
+
+    <!-- Light/Dark Mode -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

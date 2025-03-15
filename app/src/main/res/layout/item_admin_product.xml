@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageViewAdminProduct"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/product_image"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_person" />
+
+        <TextView
+            android:id="@+id/textViewAdminProductName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/menuButtonAdminProduct"
+            app:layout_constraintStart_toEndOf="@+id/imageViewAdminProduct"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Premium Spark Plugs" />
+
+        <TextView
+            android:id="@+id/textViewAdminProductCategory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="12dp"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/menuButtonAdminProduct"
+            app:layout_constraintStart_toEndOf="@+id/imageViewAdminProduct"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAdminProductName"
+            tools:text="Engine" />
+
+        <TextView
+            android:id="@+id/textViewAdminProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewAdminProduct"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAdminProductCategory"
+            tools:text="$32.99" />
+
+        <TextView
+            android:id="@+id/textViewAdminProductStock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:drawableStart="@drawable/ic_inventory"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="12sp"
+            app:drawableTint="@color/colorTextSecondary"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewAdminProductPrice"
+            app:layout_constraintStart_toEndOf="@+id/textViewAdminProductPrice"
+            app:layout_constraintTop_toTopOf="@+id/textViewAdminProductPrice"
+            tools:text="40 in stock" />
+
+        <ImageButton
+            android:id="@+id/menuButtonAdminProduct"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/product_options"
+            android:src="@drawable/ic_more_vert"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/colorTextSecondary" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

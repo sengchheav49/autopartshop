@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="ic_electric" />
+    <drawable name="ic_light" />
+    <drawable name="ic_interior" />
+    <drawable name="ic_exterior" />
+    <drawable name="ic_part" />
+    <drawable name="ic_all_categories" />
+    <drawable name="banner_1" />
+</resources>
