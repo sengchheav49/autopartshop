@@ -81,7 +81,12 @@ public class SharedPrefManager {
             return null;
         }
 
-        return new User(username, email, password,phone,address, profileImage);
+        // Create user object with proper ID
+        User user = new User(username, email, password, phone, address, profileImage);
+        user.setId(userId);
+        user.setAdmin(isAdmin);
+        
+        return user;
     }
     public void updateUser(User user) {
         SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -122,6 +127,22 @@ public class SharedPrefManager {
 
     public String getString(String key, String defaultValue) {
         return sharedPreferences.getString(key, defaultValue);
+    }
+
+    /**
+     * Get a boolean value from SharedPreferences
+     */
+    public boolean getBooleanValue(String key, boolean defaultValue) {
+        return sharedPreferences.getBoolean(key, defaultValue);
+    }
+
+    /**
+     * Set a boolean value in SharedPreferences
+     */
+    public void setBooleanValue(String key, boolean value) {
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putBoolean(key, value);
+        editor.apply();
     }
 
     public boolean isLoggedIn() {

@@ -3,4 +3,5 @@
     <item name="main" type="id" />
     <item name="bottomNavigation" type="id" />
     <item name="fragmentContainer" type="id" />
+    <item name="action_check_cart" type="id" />
 </resources>
